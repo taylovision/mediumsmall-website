@@ -27,19 +27,14 @@
 <!-- Logo Color Change -->
 <script>
 $(function () {
-  if ($(this).scrollTop() >= $(this).scrollTop() > $nav.height()) {
+  if ($(this).scrollTop() >= $nav.height()) {
     
     $(".visible").html("<img src='img/mdsm-logo-horizontal-white-01.svg'>");
 	} else {
     
     $(".visible").html("<img src='img/mdsm-logo-horizontal-01.svg'>");
   }
-	
 });
-});
-
-$(document).scroll(function() {
-  
 
 </script>
   </head>
