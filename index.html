@@ -26,16 +26,16 @@
 
 <!-- Logo Color Change -->
 <script type="text/javascript">
-$(window).scroll(function() {
-    if ($(".navbar").offset().top > 50) {
-        $('#custom-nav').addClass('affix');
-        $(".navbar-fixed-top").addClass("top-nav-collapse");
-        $('.navbar-brand img').attr('src','img/mdsm-logo-horizontal-white-01.svg'); //change src
-    } else {
-        $('#custom-nav').removeClass('affix');
-        $(".navbar-fixed-top").removeClass("top-nav-collapse");
-        $('.navbar-brand img').attr('src','img/mdsm-logo-horizontal-01.svg')
-    }   
+$(document).scroll(function() {
+  
+  if ($(this).scrollTop() >= 50) {
+    
+    $(".logo").html("<img src='img/mdsm-logo-horizontal-white-01.svg'>");
+	} else {
+    
+    $(".logo").html("<img src='img/mdsm-logo-horizontal-01.svg'>");
+  }
+	
 });
 </script>
   </head>
