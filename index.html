@@ -26,16 +26,15 @@
 
 <!-- Logo Color Change -->
 <script type="text/javascript">
-$(document).scroll(function() {
-  
-  if ($(this).scrollTop() >= 50) {
-    
-    $(".navbar-brand").html("<img src='img/mdsm-logo-horizontal-white-01.svg'>");
-	} else {
-    
-    $(".navbar-brand").html("<img src='img/mdsm-logo-horizontal-01.svg'>");
-  }
-	
+$(function () { 
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) { 
+            $('.navbar .navbar-brand img').attr('src','img/mdsm-logo-horizontal-white-01.svg');
+        }
+        if ($(this).scrollTop() < 50) { 
+            $('.navbar .navbar-brand img').attr('src','img/mdsm-logo-horizontal-01.svg');
+        }
+    })
 });
 </script>
   </head>
