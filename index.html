@@ -28,8 +28,8 @@
 <script>
 $(function () {
   $(document).scroll(function () {
-	  var $nav = $(".navbar-fixed-top");
-	  $nav.toggleClass('logo-end', $(this).scrollTop() > $nav.height());
+	  var $nav = $(".logo-swap");
+	  $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
 	});
 });
 </script>
