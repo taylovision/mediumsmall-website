@@ -71,5 +71,13 @@
       tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
     }
   });
+  
+   if ($(this).scrollTop() > 50) { 
+            $('.navbar .navbar-brand img').attr('src','img/mdsm-logo-horizontal-white-01.svg');
+        }
+        if ($(this).scrollTop() < 50) { 
+            $('.navbar .navbar-brand img').attr('src','img/mdsm-logo-horizontal-01.svg');
+        }
+    });
 
 })(jQuery); // End of use strict
