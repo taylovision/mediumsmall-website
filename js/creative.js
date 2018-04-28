@@ -20,6 +20,11 @@
     $('.navbar-collapse').collapse('hide');
   });
 
+  // Activate scrollspy to add active class to navbar items on scroll
+  $('body').scrollspy({
+    target: '#nav-item',
+    offset: 57
+  });
 
   // Collapse Navbar
   var navbarCollapse = function() {
