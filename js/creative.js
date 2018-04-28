@@ -71,13 +71,13 @@
       tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
     }
   });
-  $(window).scroll(function() {
-   if ($(this).scrollTop() > 50) { 
-            $('.navbar .navbar-brand img').attr('src','img/mdsm-logo-horizontal-white-01.svg');
-        }
-        if ($(this).scrollTop() < 50) { 
-            $('.navbar .navbar-brand img').attr('src','img/mdsm-logo-horizontal-01.svg');
-        }
-    });
+  $(document).scroll(function() {
+  if ($(this).scrollTop() >= 57) {
+    $(".logo").html("<img src='img/mdsm-logo-horizontal-white-01.svg'>");
+	} else {
+    
+    $(".logo").html("<img src='img/mdsm-logo-horizontal-01.svg'>");
+  }
+});
 
 })(jQuery); // End of use strict
