@@ -73,10 +73,10 @@
   });
   $(document).scroll(function() {
   if ($(this).scrollTop() >= 57) {
-    $(".visible").html("<img src='img/mdsm-logo-horizontal-white-01.svg'>");
+    $(".navbar-brand").html("<img src='img/mdsm-logo-horizontal-white-01.svg'>");
 	} else {
     
-    $(".visible").html("<img src='img/mdsm-logo-horizontal-01.svg'>");
+    $(".navbar-brand").html("<img src='img/mdsm-logo-horizontal-01.svg'>");
   }
 });
 
