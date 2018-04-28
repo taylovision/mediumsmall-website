@@ -19,23 +19,24 @@
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
     <!-- Plugin CSS -->
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <!-- <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet"> -->
 
     <!-- Custom styles for this template -->
     <link href="css/creative.min.css?v=2.0" rel="stylesheet">
 
 <!-- Logo Color Change -->
 <script>
-$(function () {
-  if ($(this).scrollTop() >= $nav.height()) {
-    
-    $(".visible").html("<img src='img/mdsm-logo-horizontal-white-01.svg'>");
-	} else {
-    
-    $(".visible").html("<img src='img/mdsm-logo-horizontal-01.svg'>");
-  }
+$(window).scroll(function() {
+    if ($(".navbar").offset().top > 50) {
+        $('#custom-nav').addClass('affix');
+        $(".navbar-fixed-top").addClass("top-nav-collapse");
+        $('.navbar-brand img').attr('src','img/mdsm-logo-horizontal-white-01.svg'); //change src
+    } else {
+        $('#custom-nav').removeClass('affix');
+        $(".navbar-fixed-top").removeClass("top-nav-collapse");
+        $('.navbar-brand img').attr('src','img/mdsm-logo-horizontal-01.svg')
+    }   
 });
-
 </script>
   </head>
 
@@ -225,8 +226,7 @@ $(function () {
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+   <!--  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script> -->
 
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
