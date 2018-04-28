@@ -72,7 +72,7 @@
     }
   });
   $(document).scroll(function() {
-  if ($(this).scrollTop() >= 57) {
+  if ($(this).scrollTop() <= 57) {
     $(".navbar-brand").html("<img src='img/mdsm-logo-horizontal-white-01.svg' width=250>");
 	} else {
     
